@@ -3,6 +3,162 @@
 	height: auto;
 }
 
-.home {
+body {
+	background-color: #f9efe0;
+}
+
+.spaced-image {
+		      display: block;
+		      margin-bottom: 70px; /* space between images */
+		      max-width: 100%;
+		    }
+
+.container {
+	 margin-top: 70px; /* Space from navbar */
 	text-align: center;
+				}
+
+h1 {
+	color: #97a98d;
+}
+
+.navbar {
+	border-bottom: 2px solid #97a98d;
+}
+
+.spaced-images {
+	width: 100%;
+  	height: auto;
+  	display: block;
+  	
+}
+
+.col-md-5 {
+  padding: 0;
+}
+
+.transparent-image {
+	opacity: 0.7; /* 0 = fully transparent, 1 = fully opaque */
+	transition: opacity 0.3s ease ;/* smooth transition */
+}
+
+.transparent-image:hover {
+  opacity: 1;             /* Fully visible on hover */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  color: #f9efe0;
+  font-size: 29px;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none;
+  margin: 0;
+  text-shadow: 
+  3px 3px 8px rgba(0, 0, 0, 0.9),
+  0 0 10px rgba(0, 0, 0, 0.7),
+  0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.image-block {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.navbar a {
+  padding: 0 20px;
+  border-right: 1px solid #97a98d; /* vertical line */
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #97a98d;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  gap: 30px;               /* space between links */
+}
+
+.nav-link {
+  position: relative;
+  display: flex;
+  justify-content: center;  /* centers text horizontally */
+  align-items: center;      /* centers vertically */
+  height: 96px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-right: 1px solid #aaa; /* vertical separator on right */
+  flex-shrink: 0; /* prevent shrinking */
+  min-width: 120px; /* optional: make links wider so space is consistent */
+  transition: background-color 0.3s ease;
+  text-align: center;
+  flex: 1;
+}
+
+.nav-link:last-child {
+  border-right: none; /* remove right border on last link */
+}
+
+.logo-item {
+	flex-shrink: 0;
+	width: 150px;
+    height: auto; 
+    object-fit: contain; /* ensures image fits nicely */
+    align-self: center;   /* ensures it's centered in the flex row */
+}
+
+.nav-item img {  
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+    height: 50px;
+    position: relative;
+    top: 23px;
+    align-self: center;
+}
+
+.nav-item {
+	display: flex;           /* make it a flex container */
+    align-items: center;     /* vertically center children */
+    height: 50px;
+}
+
+.nav-item .home-text {
+  margin: 0;              /* remove default margins */
+  font-size: 3rem;
+  color: #97a98d;
+  position: relative;
+  top: -30px; /* shifts "Home" text up */
+  left: 150px;
+  align-self: center;
+}
+
+.nav-item .home-link {
+  padding-right: 200px; /* increase space to the right */
+  border-right: 1px solid #97a98d; /* keep the vertical line */
+}
+
+.nav-link:hover h1 {
+  color: #f9efe0; /* Your hover color */
+}
+
+.nav-link h1 {
+  color: #97a98d; /* Default color */
+  transition: color 0.3s ease;
+}
+
+.home-link:hover h1 {
+  color: #f9efe0; /* Your hover color */
+}
+
+.home-link h1 {
+  color: #97a98d; /* Default color */
+  transition: color 0.3s ease;
 }
